@@ -251,7 +251,7 @@ body{
 
 
     body{
-        height: 60vh;
+        height: 10vh;
     }
 
     /* Navigation---------------------------------------------------------------------------------------------- */
@@ -363,20 +363,25 @@ body{
     }
 
     #home .home-left{
-        height: 100%;
+        height: 80%;
         width: 100%;
-        /* display: none; */
+        display: none;
     }
 
     .home-left .left-content{
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -70%);
         width: 80%;
     }
     
     #home .home-right{
-        height: 56vh;
+        height: 80%;
         width: 100%;
-        display: none;
+        /* display: none; */
+    }
+
+    .home-right img{
+        width: 80%;
+        transform: translateX(10%);
     }
 
     /* Home---------------------------------------------------------------------------------------------- */
