@@ -1,0 +1,260 @@
+/* #24302f */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root{
+    --color-text-W: #fff;
+    --color-text-B: #000;
+    --bg-color-DBG: #24302f;
+    --bg-color-AM: #7fffd4;
+}
+
+body{
+    background: linear-gradient(to right, #24302f 50%, #7fffd4 50%) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+}
+
+/* Navigation bar====================================================================================================================== */
+
+/* Header-1 */
+
+#navigation .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-1 .logo{
+    font-size: 2em;
+    color: var(--color-text-W);
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+#check{
+    display: none;
+}
+
+.header-1 .navbar-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 70%;
+    height: 5vh;
+    transform: translateX(-150%);
+    transition: all .2s ease;
+}
+
+.header-1 .navbar-1 ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar-1 ul a{
+    color: var(--color-text-W);
+}
+
+.navbar-1 .search{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search #input-box{
+    display: none;
+}
+
+.search #mag-glass{
+    width: 0;
+    height: 4.5vh;
+    background: #00000043;
+    border: none;
+    transition: all 1s ease;
+    font-size: 1em;
+    color: var(--color-text-W);
+}
+
+#mag-glass::placeholder{
+    padding-left: 5px;
+    color: var(--color-text-W);
+}
+
+#input-box:checked ~ #mag-glass{
+    width: 90%;
+    padding-left: 5px;
+    transition: all 1s ease;
+}
+
+.search i{
+    font-size: 1.2em;
+    color: var(--color-text-W);
+}
+
+.header-1 #bar-1{
+    font-size: 1.3em;
+    color: var(--color-text-W);
+}
+
+#check:checked ~ .navbar-1{
+    transform: translateX(0%);
+    transition: all .2s ease;
+}
+
+/* Header-2 */
+
+#navigation .header-2{
+    display: none;
+}
+
+
+
+/* Navigation bar====================================================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+/* 991px */
+
+@media (max-width:991px){
+    /* Navigation---------------------------------------------------------------------------------------------- */
+
+    #navigation .header-1{
+        display: none;
+    }
+
+    #navigation .header-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .header-2 .logo-1{
+        font-size: 2em;
+        color: var(--color-text-W);
+        font-variant: small-caps;
+        font-weight: 600;
+    }
+
+    #check-1{
+        display: none;
+    }
+
+    .header-2 .navbar-2{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 0;
+        top: 100%;
+        left: 0;
+        gap: 10px;
+        padding: 15px 0;
+        background: #00000015;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+
+    .header-2 .navbar-2 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-2 ul a{
+        font-size: 1.1em;
+        font-weight: 600;
+        color: var(--color-text-W);
+    }
+
+    .header-2 .search-1 #input-box-1{
+        display: none;
+    }
+
+    .search-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 4vh;
+    }
+
+    .search-1 #mag-glass-1{
+        width: 0;
+        height: 100%;
+        transition: all 1s ease;
+        border: none;
+        background: #00000043;
+        color: var(--color-text-W);
+        font-size: 1em;
+    }
+
+    #mag-glass-1::placeholder{
+        padding-left: 10px;
+    }
+
+    .search-1 i{
+        font-size: 1.2em;
+        color: var(--color-text-W);
+    }
+
+    .header-2 #bar-2{
+        font-size: 1.3em;
+        color: var(--color-text-W);
+    }
+
+    #input-box-1:checked ~ #mag-glass-1{
+        display: flex;
+        width: 90%;
+        transition: all 1s ease;
+        padding-left: 10px;
+    }
+
+    #check-1:checked ~ .navbar-2{
+        display: flex;
+        width: 100%;
+    }
+    /* Navigation---------------------------------------------------------------------------------------------- */
+}
