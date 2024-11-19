@@ -359,13 +359,13 @@ body{
 
     /* Home---------------------------------------------------------------------------------------------- */
     #home{
-        height: 55vh;
+        height: 56vh;
     }
 
     #home .home-left{
         height: 100%;
         width: 100%;
-        display: none;
+        /* display: none; */
     }
 
     .home-left .left-content{
@@ -374,8 +374,9 @@ body{
     }
     
     #home .home-right{
-        height: 54.74vh;
+        height: 56vh;
         width: 100%;
+        display: none;
     }
 
     /* Home---------------------------------------------------------------------------------------------- */
